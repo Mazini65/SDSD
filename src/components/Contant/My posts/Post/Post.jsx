@@ -1,5 +1,4 @@
 import React from "react";
-import Like from "./Like/Like";
 import s from "./Post.module.css";
 
 const Post = (props) => {
@@ -8,7 +7,8 @@ const Post = (props) => {
       <div>
         <img src="https://gtavrl.ru/public/poscreenra.jpg" />
         {props.message}
-        <Like text="55" />
+        <span>like</span>
+        {props.likesCount}
       </div>
     </div>
   );
