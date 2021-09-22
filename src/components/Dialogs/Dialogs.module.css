@@ -3,11 +3,3 @@
   grid-template-columns: 2fr 10fr;
   grid-template-rows: 1fr 10fr;
 }
-.dialogName {
-  display: flex;
-  flex-direction: column;
-}
-.message {
-  display: flex;
-  flex-direction: column;
-}

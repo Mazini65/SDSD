@@ -1,15 +1,15 @@
 import React from "react";
-import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
+import s from "./MyPosts.module.css";
 
-const MyPosts = () => {
-  let posts = [
-    { message: "Hello,Chief!", likesCount: 2 },
-    { message: "How are you?", likesCount: 4 },
-    { message: "WHAT???", likesCount: 3 },
-  ];
-  let postsElement = posts.map((p) => (
-    <Post message={p.message} likesCount={p.likesCount} />
+const MyPosts = (props) => {
+  let postsElement = props.posts.map((p) => (
+    <Post
+      src={p.src}
+      message={p.message}
+      text={p.text}
+      likesCount={p.likesCount}
+    />
   ));
   return (
     <div>
@@ -24,4 +24,5 @@ const MyPosts = () => {
     </div>
   );
 };
+console.log(MyPosts);
 export default MyPosts;
