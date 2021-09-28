@@ -1,4 +1,5 @@
 .dialogName {
   display: flex;
   flex-direction: column;
+  color: rgb(143, 142, 142);
 }

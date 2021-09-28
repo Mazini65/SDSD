@@ -7,7 +7,7 @@ const Contant = (props) => {
   return (
     <div>
       <div>
-        <ContantInfo contantInfo={props.contantInfo} />
+        <ContantInfo />
       </div>
       <div>
         <MyPosts posts={props.posts} />

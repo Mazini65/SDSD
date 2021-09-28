@@ -1,1 +1,11 @@
-
+.contantInfo {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.contantPage {
+  height: 300px;
+}
+.avatar {
+  height: 130px;
+  width: 130px;
+}

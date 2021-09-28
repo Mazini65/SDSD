@@ -41,13 +41,12 @@
   display: grid;
   width: 2000px;
   grid-template-areas:
-    "header header"
-    "nav contant";
-  grid-template-columns: 2fr 10fr;
-  grid-template-rows: 60px 1fr;
-  grid-gap: 10px;
+    "header header header"
+    "nav contant sidebar";
+  grid-template-columns: 2fr 10fr 5fr;
+  grid-template-rows: 60px 1fr 100px;
 }
 .App-wrapper-contant {
   grid-area: contant;
-  background-color: rgb(113, 183, 243);
+  background-color: rgb(230, 238, 245);
 }
