@@ -1,10 +1,11 @@
 import React from "react";
 import Users from "./Users/Users";
+import s from './Sidebar.module.css';
 const Sidebar = () => {
   return (
-    <div>
+    <nav className={s.sidebar}>
       <Users />
-    </div>
+    </nav>
   );
 };
 export default Sidebar;

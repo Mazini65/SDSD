@@ -37,7 +37,7 @@
   }
 }
 .App-wrapper {
-  margin: 0 auto;
+  margin: 0px;
   display: grid;
   width: 2000px;
   grid-template-areas:

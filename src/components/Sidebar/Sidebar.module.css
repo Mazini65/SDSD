@@ -1,0 +1,10 @@
+.sidebar {
+  grid-area: sidebar;
+  background-color: rgb(192, 219, 243);
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "nav nav";
+  grid-template-columns: 1fr 1fr;
+  margin: 0px;
+}
