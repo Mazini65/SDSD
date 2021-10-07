@@ -1,23 +1,25 @@
+import rerenderEntireTree from "../render";
+
 let state = {
   contantPage: {
 posts:[
-  {
+   {
+    id:1,
     message: "Hello,Chief!!",
     likesCount: 2,
     text: "like",
-    src: "https://gtavrl.ru/public/poscreenra.jpg",
   },
-  {
+   {
+    id:2,
     message: "How are you?",
     likesCount: 4,
-    text: "like",
-    src: "https://gtavrl.ru/public/poscreenra.jpg",
+    text: "like"
   },
-  {
+   {
+    id:3,
     message: "WHAT???",
     likesCount: 3,
     text: "like",
-    src: "https://gtavrl.ru/public/poscreenra.jpg",
   },
 ]
   },
@@ -36,4 +38,14 @@ messages:[
     ]
     }  
 }
+export let addPost = (postMessage) => {
+  let newPost = {
+    id: 4,
+    message: postMessage,
+    likesCount: 0,
+    text: "like",
+  };
+  state.contantPage.posts.push(newPost);
+  rerenderEntireTree(state);
+  }
 export default state

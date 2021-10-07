@@ -4,6 +4,7 @@ const Comment = () => {
   let addComment = () => {
     let commentElement = newCommentElement.current.value;
     alert(commentElement);
+    newCommentElement.current.value = "";
   };
   return (
     <div>

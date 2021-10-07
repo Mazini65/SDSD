@@ -18,7 +18,7 @@ const App = (props) => {
     <Header />
     <Navbar />
       <div className='App-wrapper-contant'>
-        <Route path='/contant' render={() => <Contant class = '.contant' posts={props.state.contantPage.posts}/>}/>
+          <Route path='/contant' render={() => <Contant class='.contant' posts={props.state.contantPage.posts} addPost={props.addPost}/>}/>
         <Route path='/dialogs' render={() => <Dialogs dialogs={props.state.messagePage.dialogs} messages={props.state.messagePage.messages}/>}/>
         <Route path='/news' component={News} />
         <Route path='/music' component={Music} />
